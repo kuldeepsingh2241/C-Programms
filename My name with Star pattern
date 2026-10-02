@@ -1,0 +1,126 @@
+#include<stdio.h>
+
+int main(){
+    for(int i=1;i<6;i++){
+        for(int j =1;j<31;j++){
+                if(j < 6){     //k
+                    if(j == 1||i-j == 1 && j < 6|| i+j == 5){
+                        printf("*");
+
+                    }
+                    else{
+                        printf(" ");
+                    }
+                }
+                else if(j > 6 && j<10){    //u
+                        if(j == 7|| j== 9||i == 5){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+
+                }
+                else if(j > 10 && j<14){    //l
+                        if(j == 11|| i == 5){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+
+                }
+                else if(j > 14 && j<18){    //d
+                        if(j == 15|| j== 17||i == 5|| i ==1){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+
+                }
+                else if(j > 18 && j<22){    //e
+                        if(j == 19|| i== 1||i == 5||i == 3){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+
+                }
+                else if(j > 22 && j<26){    //e
+                        if(j == 23|| i== 1||i == 5||i == 3){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+
+               }
+               else if(j > 26 && j<30){    //p
+                        if(j == 27|| i== 1||j == 29 && i <4||i == 3){
+                            printf("* ");
+                        }
+                        else{
+                            printf("  ");
+                        }
+               }
+
+               else{
+                printf("  ");
+               }
+
+        }
+        printf(" \n");
+    }
+    printf(" \n");
+    for(int i=1;i<6;i++){
+        for(int j =1;j<31;j++){
+            if(j>0 && j < 4){ //s
+                if(i == 1 || i == 3 || i == 5 || j == 1 && i < 4 || j == 3 && i >2){
+                    printf("* ");
+                }
+                else{
+                    printf("  ");
+                }
+            }
+            else if(j>4 && j < 8){ //i
+                if(i == 1 || i == 5 || j == 6){
+                    printf("* ");
+                }
+                else{
+                    printf("  ");
+                }
+            }
+            else if(j>8 && j < 14){ //n
+                if(j == 9  || i + 8 == j || j == 13){
+                    printf("*");
+                }
+                else{
+                    printf(" ");
+                }
+            }
+            else if(j>14 && j < 20){ //g
+                if(i == 1 || i == 5 || j == 15 || j == 19 && i>2 || j == 18 && i == 3){
+                    printf("*");
+                }
+                else{
+                    printf(" ");
+                }
+            }
+            else if(j>20 && j < 24){ //h
+                if(i == 3 || j == 21 || j == 23){
+                    printf("* ");
+                }
+                else{
+                    printf("  ");
+                }
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf(" \n");
+    }
+
+}
